@@ -1,14 +1,19 @@
 body { 
     font-family: montserrat;
+    
 }
 
 h1 {
 	color: red;
 	text-align: center;
+    
 }
 
 .profile {
-    display: flexbox;
+    display: inline-block;
+    grid-row: auto;
+    
+    
 }
 
 footer {
@@ -17,6 +22,13 @@ footer {
 
 .btn-submit:hover{
     background-color: blueviolet;
+}
+
+.profil-picture{
+    border-style: inset;
+    border-width: 2em;
+    border-top-left-radius: 2em;
+    border-color: aqua;
 }
 
 
