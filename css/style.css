@@ -13,6 +13,7 @@ h1 {
   text-align: center;
   font-weight: bolder;
   letter-spacing: 5px;
+  margin: 1.5em 0em;
 }
 * {
   margin: 0;
@@ -68,10 +69,10 @@ li a:hover:not(.active) {
 
 .profil {
   display: flex;
-  width: 50%;
+  width: 70%;
   justify-content: space-around;
   align-items: center;
-  margin: 8em 0em 0em;
+  margin: 4em 0em 0em;
 }
 
 .profil-picture {
@@ -86,11 +87,19 @@ li a:hover:not(.active) {
 .profil-picture:hover {
   width: 400px;
 }
-
+.textprofil-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 45%;
+}
 .textprofil {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
+  align-items: flex-end;
   gap: 0.3em;
 }
 .nom {
@@ -98,17 +107,10 @@ li a:hover:not(.active) {
   font-size: 1.3em;
   font-weight: bold;
 }
-.textprofil-btn {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 50%;
-}
 
 .btn-detailprofile {
   background-color: #cc8b65;
+  align-items: flex-start;
   color: #e3dcd2;
   font-size: 1.3em;
   border: 0.1em solid #e3dcd2;
@@ -123,6 +125,78 @@ li a:hover:not(.active) {
   border: #013328;
 }
 
+/**** abou me ******/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about-flex > p{
+  margin: 0.5em 0em;
+}
+.langage_grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4em;
+  padding: 10px;
+  margin: 2em 0em;
+  width: 80%;
+}
+.langage_grid > div{
+  width: 12em;
+  height: 9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #100c0d;
+  border-radius: 1em;
+  
+  z-index: 1;
+  color:#e3dcd2;
+  letter-spacing: 3px;
+  fill:#e3dcd2
+}
+.langage_grid > div:hover{
+  color: #cc8b65;
+  fill: #cc8b65;
+  z-index: 6;
+  box-shadow: 1px 0px #e3dcd2;
+}
+.logo_tech{
+  width: 5em;
+}
+.logo_tech1{
+  width: 4em;
+}
+
+.titre_tech{
+  font-weight: bold;
+  /* color:#e3dcd2; */
+  margin-top: 1em;
+}
+.titre_tech:hover{
+  color: #cc8b65;
+}
+iframe{
+  border-radius: 1em;
+  z-index: 99;
+  margin-top: 1.5em;
+  box-shadow: #e3dcd2;
+}
+
+/**** footer ******/
 footer {
   width: 100%;
   background-color: #100c0d;
@@ -141,26 +215,34 @@ footer > div {
   justify-content: space-evenly;
   align-items: center;
 }
+.footer_icon{
+  width: 30px;
+  fill:#e3dcd2;
+}
+.footer_icon:hover{
+  
+  fill:#cc8b65;
+}
 
+/**** Svg ******/
+.leaf1{
+  position: absolute;
+  top: 18em;
+  left: 65em;
+  fill: #317773;
+  width: 5em;
+}
 .down {
   width: 40px;
   fill: #e3dcd2;
-  margin: 10em 0em;
+  margin: 6em 0em;
 }
-/**** abou me ******/
-
-#about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#about > div > p {
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%; */
-  text-indent: 4em;
+.up {
+  position: fixed;
+  bottom: 10px;
+  float: left;
+  left: 2%;
+  width: 40px;
+  fill: #e3dcd2;
+  margin: 6em 0em;
 }
