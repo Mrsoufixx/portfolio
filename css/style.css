@@ -169,7 +169,7 @@ footer > div{
     align-items: center;
     width: 100%;
 }
-#about p{
+#about div p{
     /* display: flex;
     flex-direction: column;
     justify-content: center;
