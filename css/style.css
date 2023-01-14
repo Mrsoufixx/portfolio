@@ -250,6 +250,14 @@ iframe{
   gap: 2em;
   
 }
+li.lien a{
+  text-decoration: none;
+  color: #cc8b65;
+}
+li.lien a:hover{
+  color: #5f4333;
+  background-color: transparent
+} 
 .experience h3, .projet h3{
   display: flex;
   font-size: 25px;
@@ -260,10 +268,10 @@ box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
   height: 4em;
   align-items: center;
   justify-content: center;
-  width: 20%;
+  width: 29%;
   border-top-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  padding: 3px 20px;
+  padding: 30px 20px;
 }
 .projet{
   flex-direction: row-reverse;
@@ -271,7 +279,8 @@ box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
   margin-top: 10px;
 }
 .experience ul li, .projet ul li{
-  list-style: none;
+  font-size: 14px;
+  list-style: circle;
   margin: 7px 0px;
   color: #011d17;
 }
@@ -289,6 +298,7 @@ box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
   box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
+  padding: 20px 10px 20px 40px
 }
 
 /**** my resume ******/
