@@ -59,63 +59,22 @@ li a:hover:not(.active) {
   background-color: #cc8b65;
   color: #e3dcd2;
 }
-.active {
-  background-color: #04aaaa;
-}
-@media screen and (max-width: 600px) {
-  .none li {
-    float: none;
-  }
-}
 
 /**** Profil ******/
 
-.btn-submit {
-  background-color: #013328;
-  border-radius: 4px;
-  border-width: 0;
-  box-sizing: border-box;
-  color: #e3dcd2;
-  display: inline-flex;
-  height: 48px;
-  padding: 16px 30px;
-  position: relative;
-  transition: box-shadow .15s,transform .15s;
-  font-size: 18px;
-  align-self: flex-end;
-  cursor: pointer;
-}
-
-.btn-submit:focus {
-  background-color: #011d17;
-}
-
-.btn-submit:hover {
-  box-shadow: 0em 0.2em 0.3em 0.1em #858887;
-  background-color: #012e24;
-}
-
-.btn-submit:active {
-  background-color: #011d17;
-  transform: translateY(2px);
-}
 
 .profil {
   display: flex;
   width: 70%;
   justify-content: space-around;
   align-items: center;
-  margin: 4em 0em 0em;
 }
 
 .profil-picture {
-  border-style: outset;
-  border-width: 1em;
-  border-bottom: 1em;
-  border-right: 1em;
   border-color: #cc8b65;
   border-radius: 25%;
   width: 250px;
+  box-shadow: 0 10px 5px -5px #011d17;
 }
 
 .textprofil-btn {
@@ -214,7 +173,7 @@ li a:hover:not(.active) {
   color: #cc8b65;
   fill: #cc8b65;
   z-index: 6;
-  box-shadow: 4px 4px 4px 4px #cc8b658c
+  box-shadow: 0px 2px 10px 2px #cc8b658c
 }
 .logo_tech{
   width: 5em;
@@ -271,7 +230,12 @@ box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
   width: 29%;
   border-top-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  padding: 30px 20px;
+}
+.experience h3{
+  padding: 16px 20px;
+}
+.projet h3{
+  padding: 33px 20px;
 }
 .projet{
   flex-direction: row-reverse;
@@ -302,7 +266,36 @@ box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
 }
 
 /**** my resume ******/
+#resume{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text_resum{
+  padding: 10px 20px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: roboto;
+  color: #011d17;
+  background-color: #e3dcd2;
+  border-radius: 15px;
+}
+.triangle{
+position: absolute;
+left:10em;
+width: 0;
+height: 0;
+border: 0 solid transparent;
+border-right-width: 20px;
+border-left-width: 20px;
+border-top: 30px solid #e3dcd2;
+transform: rotate (90deg);
+}
+
+
 .btn-resume {
+  margin-top: 6em;
 	background: #011d17;
 	font-weight: 700;
 	padding: 0;
@@ -357,6 +350,7 @@ form{
 
 .remplir{
   width: 70%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -414,6 +408,35 @@ input:placeholder-shown {
 textarea {
   height: 80px;
   resize: none;
+}
+.btn-submit {
+  background-color: #013328;
+  border-radius: 12px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #e3dcd2;
+  display: inline-flex;
+  height: 48px;
+  padding: 16px 30px;
+  position: relative;
+  transition: box-shadow .15s,transform .15s;
+  font-size: 18px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-submit:focus {
+  background-color: #011d17;
+}
+
+.btn-submit:hover {
+  box-shadow: 0em 0.2em 0.3em 0.1em #858887;
+  background-color: #012e24;
+}
+
+.btn-submit:active {
+  background-color: #011d17;
+  transform: translateY(2px);
 }
 .parle{
   margin-top: 3em;
@@ -473,7 +496,7 @@ div h5{
 .social{
   position: fixed;
   right: 0px;
-  top: 50%;
+  top: 45%;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -532,3 +555,51 @@ div h5{
   z-index: 2;
 }
 
+.motif_1{
+  position: absolute;
+  z-index: -1;
+  top: 4em;
+  left: 4em;
+  width: 18em;
+  fill: #011d17;
+}
+.motif_2{
+  position: absolute;
+  z-index: -1;
+  top: 70em;
+  right: 8em;
+  width: 18em;
+  fill: #011d17;
+}
+.motif_3{
+  position: absolute;
+  z-index: -1;
+  top: 116em;
+  left: 5em;
+  width: 14em;
+  fill: #011d17;
+}
+.motif_4{
+  position: absolute;
+  z-index: -1;
+  top: 138em;
+  right: 5em;
+  width: 14em;
+  fill: #011d17;
+}
+.motif_5{
+  position: absolute;
+  z-index: -1;
+  top: 155em;
+  /* right: 5em; */
+  width: 40em;
+  fill: #011d17;
+}
+.motif_6{
+  position: absolute;
+    z-index: 0;
+    top: 199em;
+    left: -6em;
+    width: 20em;
+    fill: #011d17;
+}
