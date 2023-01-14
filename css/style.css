@@ -192,6 +192,8 @@ iframe{
   margin-top: 1.5em;
   box-shadow: 0.2em 0.2em 0.2em 0.2em #e3dcd2;
 }
+/**** my work ******/
+
 
 /**** footer ******/
 footer {
@@ -206,7 +208,7 @@ footer {
   height: 35em;
 }
 #contact{
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -222,18 +224,25 @@ form{
 
 
 .remplir{
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1em;
+  gap: 0.5em;
   border-radius: 15px;
   background-color:#e3dcd2;
   padding: 20px;
   box-shadow: 0.3em 0.3em 0.3em 0.3em #01271f;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
+}
+.contact_flex{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 input[type=text],input[type=email], select, textarea {
+  font-family: roboto;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -244,16 +253,18 @@ input[type=text],input[type=email], select, textarea {
   
 }
 
+
 textarea:focus, input:focus, select:focus { 
   outline: none ;
   border-color: #56aaa6;
   box-shadow: 0 0 10px #56aaa6;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: #317773;
   opacity: 1;
 }
+
 input:placeholder-shown {
   border: 1px solid #317773;
 }
@@ -267,29 +278,68 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-
 input[type=submit]:hover {
   background-color: #01271f;
 }
+textarea {
+  height: 80px;
+  resize: none;
+}
 .parle{
+  margin-top: 3em;
   color: #013328 ;
   display: flex;
   flex-direction: column;
+  
   align-items: flex-start;
   width: 40%;
 }
 .text_footer{
   color: #013328;
+  font-family: roboto;
+  font-size: 2.4em;
+  font-weight: 900;
+  margin-top: 5px;
 }
-.contact_flex{
-  width:100%;
+div h5{
+  margin-top: 25px;
+  font-size: 1.1em;
+}
+
+.mailing{
+  font-family: roboto;
+  font-size: 1em;
+  font-weight: 700;
+  color: #013328;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  background-color: #e3dcd2 ;
+  border-radius: 6px;
+  width: 18em;
+  height: 4em;
+  box-shadow: 2px 2px 2px 2px   #01271f;
+  text-decoration: none;
+}
+.mailing>div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #013328;
 }
 
 /**** Svg ******/
+.mailing>div>svg{
+  width: 25px;
+  fill: #e3dcd2;
+  
+ }
+
 .social{
   position: fixed;
   right: 0px;
@@ -346,3 +396,4 @@ input[type=submit]:hover {
   margin: 6em 0em;
   z-index: 2;
 }
+
