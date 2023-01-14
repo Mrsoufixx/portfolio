@@ -63,8 +63,36 @@ li a:hover:not(.active) {
 
 /**** Profil ******/
 
+.btn-submit {
+  background-color: #013328;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #e3dcd2;
+  display: inline-flex;
+  height: 48px;
+  padding: 16px 16px;
+  position: relative;
+  transition: box-shadow .15s,transform .15s;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  width: 40%;
+}
+
+.btn-submit:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
 .btn-submit:hover {
-  background-color: #cc8b65;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-submit:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 .profil {
@@ -107,20 +135,27 @@ li a:hover:not(.active) {
 }
 
 .btn-detailprofile {
-  background-color: #cc8b65;
-  align-items: flex-start;
-  color: #e3dcd2;
-  font-size: 1.3em;
-  border: 0.1em solid #e3dcd2;
-  border-top-left-radius: 1em;
+	background: #011d17;
+	font-weight: 700;
+	padding: 0;
+	border-top-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  padding: 0.3em 0.8em;
+  border: 1px solid #e3dcd2 ;
 }
 
-.btn-detailprofile:hover {
-  background-color: #100c0d;
-  color: #013328;
-  border: #013328;
+.btn-detailprofile span {
+	display: block;
+  color: #e3dcd2;
+	background: #cc8b65;
+	padding: 0.7em 1.5em;
+	border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.btn-detailprofile:hover span {
+	transform: translate3d(-8px, -8px, 0);
 }
 
 /**** abou me ******/
@@ -150,6 +185,7 @@ li a:hover:not(.active) {
   padding: 10px;
   margin: 2em 0em;
   width: 80%;
+  
 }
 .langage_grid > div{
   width: 12em;
@@ -164,13 +200,13 @@ li a:hover:not(.active) {
   color: #013328;
   letter-spacing: 3px;
   fill: #013328;
-  text-shadow: #013328;
+  box-shadow: 9px 9px 9px 9px #011d17
 }
 .langage_grid > div:hover{
   color: #cc8b65;
   fill: #cc8b65;
   z-index: 6;
-  box-shadow: 1px 0px #e3dcd2;
+  box-shadow: 4px 4px 4px 4px #cc8b658c
 }
 .logo_tech{
   width: 5em;
@@ -190,7 +226,7 @@ li a:hover:not(.active) {
 iframe{
   border-radius: 1em;
   margin-top: 1.5em;
-  box-shadow: 0.2em 0.2em 0.2em 0.2em #e3dcd2;
+  box-shadow: 9px 9px 9px 9px #011d17;
 }
 /**** my work ******/
 #work{
@@ -204,21 +240,18 @@ iframe{
 #work div{
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: #e3dcd2;
   color: #013328;
-  
   border-radius: 10px;
   box-shadow: 9px 9px 9px 9px #011d17;
 }
-.experience{
-  gap: 20em;
-}
 .experience h3, .projet h3{
   display: flex;
+  font-size: 25px;
 background-color:#cc8b6563;
-  width: 10em;
-  height: 4.5em;
+  width: 9em;
+  height: 4em;
   align-items: center;
   justify-content: center;
 
@@ -232,6 +265,8 @@ background-color:#cc8b6563;
 }
 .projet{
   flex-direction: row-reverse;
+  gap: 3em;
+  margin-top: 10px;
 }
 .experience ul li, .projet ul li{
   list-style: none;
@@ -239,47 +274,36 @@ background-color:#cc8b6563;
 }
 .projet ul li{
   align-items: flex-start;
+  text-decoration: none;
+}
+.projet ul, .experience ul{
+  text-decoration: none;
 }
 /**** my resume ******/
 .btn-resume {
-  border: 0.1em solid #e3dcd2;
-  border-top-left-radius: 1em;
+	background: #011d17;
+	font-weight: 700;
+	padding: 0;
+	border-top-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  background-color: transparent;
-  box-sizing: border-box;
+  border: 1px solid #e3dcd2 ;
+}
+
+.btn-resume span {
+	display: block;
   color: #e3dcd2;
-  font-family: "Avenir Next LT W01 Bold",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-
-.btn-resume:before {
-  background-color: #cc8b65;
-  border-top-left-radius: 1em;
+	background: #cc8b65;
+	padding: 0.7em 1.5em;
+	border-top-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  content: "";
-  height: calc(100% + 2px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
-.btn-resume:hover:before {
-  background-color: #cc8b65;
-  top:0px;
-  right: 0px;
+.btn-resume:hover span {
+	transform: translate3d(-8px, -8px, 0);
 }
+
 
 /**** footer ******/
 footer {
@@ -288,10 +312,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
   position: relative;
   bottom: 0em;
-  height: 35em;
+  height: 32em;
 }
 #contact{
   width: 80%;
@@ -364,36 +388,7 @@ input:placeholder-shown {
   border-radius: 4px;
   cursor: pointer;
 } */
-/*
 
-/* CSS */
-.btn-send {
-  align-items: center;
-  background: #FFFFFF;
-  border: 0 solid #E2E8F0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  box-sizing: border-box;
-  color: #1A202C;
-  display: inline-flex;
-  font-size: 1rem;
-  font-weight: 700;
-  height: 56px;
-  justify-content: center;
-  line-height: 24px;
-  overflow-wrap: break-word;
-  padding: 24px;
-  text-decoration: none;
-  width: auto;
-  border-radius: 8px;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-*/
-input[type=submit]:hover {
-  background-color: #01271f;
-}
 textarea {
   height: 80px;
   resize: none;
@@ -498,6 +493,8 @@ div h5{
   width: 40px;
   fill: #e3dcd2;
   margin: 6em 0em;
+  -webkit-filter: drop-shadow(5px 5px 5px 5px rgba(1,29,23));
+  filter: drop-shadow(5px 5px 5px 5px rgba(1,29,23)); 
 }
 .up {
   position: fixed;
@@ -508,5 +505,6 @@ div h5{
   fill:#cc8b65;
   margin: 6em 0em;
   z-index: 2;
+  filter: drop-shadow(5px 5px 5px 5px #011d17); 
 }
 
