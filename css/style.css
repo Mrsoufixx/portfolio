@@ -6,14 +6,21 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
   color: #cc8b65;
   text-align: center;
+  font-size: 3em;
   font-weight: bolder;
   letter-spacing: 5px;
-  margin: 1.5em 0em;
+  margin: 1em 0em;
+
+  text-shadow: 2px 2px 2px 2px #011d17 ;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+       background-clip: text;;
 }
 * {
   margin: 0;
@@ -67,31 +74,29 @@ li a:hover:not(.active) {
   background-color: #013328;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #e3dcd2;
   display: inline-flex;
   height: 48px;
-  padding: 16px 16px;
+  padding: 16px 30px;
   position: relative;
   transition: box-shadow .15s,transform .15s;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
   font-size: 18px;
-  width: 40%;
+  align-self: flex-end;
+  cursor: pointer;
 }
 
 .btn-submit:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  background-color: #011d17;
 }
 
 .btn-submit:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+  box-shadow: 0em 0.2em 0.3em 0.1em #858887;
+  background-color: #012e24;
 }
 
 .btn-submit:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
+  background-color: #011d17;
   transform: translateY(2px);
 }
 
@@ -165,6 +170,7 @@ li a:hover:not(.active) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
 .about-flex{
   display: flex;
@@ -175,6 +181,8 @@ li a:hover:not(.active) {
 }
 .about-flex > p{
   margin: 0.5em 0em;
+  text-align: center;
+  font-size: 1.1em;
 }
 .langage_grid{
   display: grid;
@@ -238,30 +246,24 @@ iframe{
 
 }
 #work div{
-  width: 100%;
   display: flex;
-  align-items: flex-start;
-  background-color: #e3dcd2;
-  color: #013328;
-  border-radius: 10px;
-  box-shadow: 9px 9px 9px 9px #011d17;
+  gap: 2em;
+  
 }
 .experience h3, .projet h3{
   display: flex;
   font-size: 25px;
-background-color:#cc8b6563;
+background-color:#013328;
+border: 1px solid #013328;
+box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
   width: 9em;
   height: 4em;
   align-items: center;
   justify-content: center;
-
-  border-radius: 10px;
-}
-.experience h3{
-  border-right: 5px solid #013328;
-}
-.projet h3{
-  border-left: 5px solid #013328;
+  width: 20%;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 3px 20px;
 }
 .projet{
   flex-direction: row-reverse;
@@ -270,15 +272,25 @@ background-color:#cc8b6563;
 }
 .experience ul li, .projet ul li{
   list-style: none;
-  margin: 15px 0px;
+  margin: 7px 0px;
+  color: #011d17;
 }
 .projet ul li{
   align-items: flex-start;
-  text-decoration: none;
+  
 }
 .projet ul, .experience ul{
-  text-decoration: none;
+  background-color: #e3dcd2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 0em 0.3em 0.2em 0.2em #011d17;
 }
+
 /**** my resume ******/
 .btn-resume {
 	background: #011d17;
@@ -315,7 +327,7 @@ footer {
   align-items:flex-start;
   position: relative;
   bottom: 0em;
-  height: 32em;
+  height: 36em;
 }
 #contact{
   width: 80%;
@@ -342,7 +354,7 @@ form{
   border-radius: 15px;
   background-color:#e3dcd2;
   padding: 20px;
-  box-shadow: 0.3em 0.3em 0.3em 0.3em #01271f;
+  box-shadow: 0.2em 0.3em 0.3em 0.1em #01271f;
   margin-bottom: 2em;
 }
 .contact_flex{
@@ -489,12 +501,15 @@ div h5{
   fill: #317773;
   width: 5em;
 }
-.down {
+.down_icon {
   width: 40px;
-  fill: #e3dcd2;
+  transform: rotate(90deg);
+  
   margin: 6em 0em;
-  -webkit-filter: drop-shadow(5px 5px 5px 5px rgba(1,29,23));
-  filter: drop-shadow(5px 5px 5px 5px rgba(1,29,23)); 
+  fill: #e3dcd2;
+}
+.down_icon:hover{
+  filter: drop-shadow(3px 5px 2px rgb(0, 27, 13));
 }
 .up {
   position: fixed;
@@ -505,6 +520,5 @@ div h5{
   fill:#cc8b65;
   margin: 6em 0em;
   z-index: 2;
-  filter: drop-shadow(5px 5px 5px 5px #011d17); 
 }
 
