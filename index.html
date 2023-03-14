@@ -4,14 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="image/lune.png" type="image/png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./image/motif.svg" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
     
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <title>KORCHI Soufiane</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('zGAfLV2_BxTkY4d26');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
   </head>
 
   <body>
@@ -24,6 +47,13 @@
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <ul class="navmobile">
+          <li><i class="fa-solid fa-house navBarMobil"></i></li>
+          <li><i class="fa-solid fa-address-card navBarMobil"></i></li>
+          <li><i class="fa-solid fa-briefcase navBarMobil"></i></li>
+          <li><i class="fa-solid fa-file navBarMobil"></i></li>
+          <li><i class="fa-solid fa-address-book navBarMobil"></i></li>
+        </ul>
       </nav>
     </header>
 
@@ -31,7 +61,7 @@
 
     <div class="profil">
       <img
-        src="image/Soufianekorchi.png"
+        src="./image/Soufianekorchi.png"
         alt="soufiane korchi"
         class="profil-picture"
       />
@@ -103,17 +133,6 @@
         </p>
         
       </div>
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/uzUKns-Znw0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
     </section>
     <a href="#work"
       > <svg class="down_icon" viewBox="0 0 512 512" width="100" title="arrow-alt-circle-right">
@@ -168,7 +187,7 @@
           puis pendant la periode de covid-19 la societé a declarer faillite et j'ai rester au chaumage pendant 2 ans, ensuit j'ai reflechis pour faire la reconversion dans le domaine informatique...  <div class="triangle">
           </div></p>
       </div>
-      <a href="/KorchiSoufiane.CV.pdf" download="soufiane_korchi_resume">
+      <a href="./Soufiane_Korchi_cv.pdf" download="soufiane_korchi_resume">
         <button class="btn-resume"><span>Plus de details</span> </button>
       </a>
     </section>
@@ -233,7 +252,7 @@
       <section id="contact">
         <h1>Contact Me</h1>
         <div class="contact_flex">
-          <form>
+          <form id="contact-form">
             <div class="remplir">
               <input
                 type="text"

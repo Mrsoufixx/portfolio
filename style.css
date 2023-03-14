@@ -43,6 +43,10 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
 }
+.nav{
+  display: flex;
+  flex-direction: row-reverse;
+}
 .nav li {
   display: inline;
   float: right;
@@ -337,6 +341,7 @@ footer {
 }
 #contact{
   width: 80%;
+  position: relative;
 }
 
 
@@ -605,4 +610,71 @@ div h5{
     left: -6em;
     width: 20em;
     fill: #011d17;
+}
+.navmobile{
+  display:none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav{
+    display:none
+  }
+  .navmobile{
+    background-color: #e3dcd2;
+    padding: 12px;
+  }
+  header,nav,.navmobile{
+    display:flex;
+    position: fixed;
+    gap: 30px;
+    bottom: 0;
+   justify-content: center;
+    padding: 6px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    width: 50%;
+    z-index: 2;
+    /* background-color: #e3dcd2; */
+    list-style: none;
+  }
+  .profil{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .motif_1,.motif_2,.motif_3,.motif_4,.motif_5,.motif_6,.social{
+    display:none
+  }
+  .navBarMobil{
+    color: #011d17;
+    font-size: 20px;
+  }
+  .textprofil-btn{
+    width: 100%;
+  }
+  .langage_grid{
+    grid-template-columns: auto;
+    row-gap: 20px;
+
+  }
+  .experience, .projet{
+    flex-wrap: wrap;
+  }
+  .mailing{
+    display: none;
+  }
+
+.contact_flex {
+  flex-direction: column;
+}
+#contact {
+  width: 100%;
+  padding-bottom: 50px;
+}
+form{
+  width: 100%;
+  
+}
+.parle{
+  display: none;
+}
 }
