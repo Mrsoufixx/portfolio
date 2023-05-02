@@ -6,12 +6,11 @@ export const experienceData=[
     company_name: "Freelance",
     icon: freelancer,
     iconBg: "#383E56",
-    date: "March 2021 - April 2023",
+    date: "{Mars 2021 - Instant}",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Formateur Javascript",
+      "Création de sites web (PrestaShop, WordPress, …).",
+      
     ],
   },
   {
@@ -19,12 +18,10 @@ export const experienceData=[
     company_name: "Kwk Laboratory",
     icon: kwk,
     iconBg: "#E6DEDD",
-    date: "Dec 2019 - Jan 2021",
+    date: "{Dec 2019 - Jan 2021}",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Superviser et piloter la mise en place de la norme ISO 17020.",
+      "Assurer une veille normative et réglementaire.",
     ],
   },
   {
@@ -32,12 +29,10 @@ export const experienceData=[
     company_name: "Formacontact",
     icon: lettref,
     iconBg: "#383E56",
-    date: "Jan 2019 - Dec 2019",
+    date: "{Jan 2019 - Dec 2019}",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Prise de rendez-vous (Projet isolation à 1 euro) ;.",
+      
     ],
   },
   // {

@@ -19,7 +19,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
                 text-sm
                 sm:text-md
                 dark:font-medium
-                bg-secondary-light
+                bg-teal-50
                 dark:bg-ternary-dark
                 text-primary-dark
                 dark:text-ternary-light

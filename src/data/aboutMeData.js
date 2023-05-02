@@ -1,10 +1,10 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Je suis Soufiane Korchi, diplômé d\'un Master en Biologie et d\'une Licence en Développement Web. Avec plus de deux ans d\'expérience en tant que responsable qualité dans un laboratoire d\'inspection, j\'ai développé des compétences en écoute active, en résolution de problèmes et en esprit d\'équipe. Passionné par le numérique et ses nombreuses possibilités, j\'ai choisi de me reconvertir dans le développement web. ',
+		bio: `Je suis Soufiane Korchi, un développeur web full-stack freelance avec plus de deux ans d'expérience dans le domaine. Fort de mon expertise en développement, collaboration et responsabilité, je suis dynamique, fiable et rigoureux. Passionné par mon métier, je suis constamment à l'affût des dernières tendances et technologies pour offrir le meilleur service à mes clients. Je suis enthousiaste et curieux, avec un esprit d'équipe développé et une grande capacité d'écoute pour répondre aux besoins spécifiques de chaque projet.`,
 	},
 	{
 		id: 2,
-		bio: `J'ai acquis une expertise en tant que Freelancer et je suis en constante évolution, toujours en quête de nouvelles connaissances et compétences. Ma curiosité intellectuelle et ma capacité à apprendre de façon autonome me permettent de m'adapter rapidement aux exigences de chaque nouveau projet. Avec un esprit critique et une rigueur intellectuelle, je m'efforce de fournir un travail de qualité à chaque fois. Si vous cherchez un professionnel rigoureux et passionné par son métier, je suis à votre disposition pour collaborer sur vos projets numériques.`,
+		bio: `En tant que leader, je suis capable de diriger des équipes et de gérer des projets avec efficacité et professionnalisme. Je suis à la recherche d'un poste de chef de projet ou de manager en entreprise multinationale pour mettre mes compétences au service d'une organisation dynamique et ambitieuse. Si vous cherchez un développeur web passionné, rigoureux et compétent pour votre entreprise, je suis à votre disposition pour une collaboration fructueuse.`,
 	},
 ];

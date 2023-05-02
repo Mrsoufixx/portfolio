@@ -1,5 +1,6 @@
 import React from "react";
-import {reactjs,figma,laravel} from "../../assets"
+import {reactjs,figma,laravel,user} from "../../assets"
+
 
 function CercleBanner( ) {
   return (
@@ -11,6 +12,7 @@ function CercleBanner( ) {
             transform="translate(100 100)"
           />
         </svg>
+          <img className="absolute top-32 right-40  w-52 z-10" src={user} alt="user"  />
       <div className="absolute top-24 left-20 w-20 h-20 z-10 bg-secondary-light dark:bg-gray-300 rounded-full flex justify-center items-center text-center p-4 shadow-2xl">
       <span className="absolute text-6xl -left-3 -top-2 drop-shadow-md text-[#41c0a2]">
         "

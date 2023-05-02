@@ -17,7 +17,7 @@ const ProjectSingle = ({ title, category, image }) => {
 					<div>
 						<img
 							src={image}
-							className="rounded-t border"
+							className="rounded-t border h-64"
 							alt="Single Project"
 						/>
 					</div>
