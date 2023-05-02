@@ -34,7 +34,7 @@ const AppHeader = () => {
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
 						<Link to="/">
-							{activeTheme === 'dark' ? (
+							{/* {activeTheme === 'dark' ? (
 								<img
 									src={logoDark}
 									className="w-36"
@@ -46,7 +46,8 @@ const AppHeader = () => {
 									className="w-36"
 									alt="Dark Logo"
 								/>
-							)}
+							)} */}
+							 <div className='text-primary-dark dark:text-primary-light text-2xl font-semibold'>K_Soufiane._</div>
 						</Link>
 					</div>
 

@@ -2,30 +2,29 @@ import React, { useState } from "react";
 import {
   HiOutlineAcademicCap,
   HiOutlineBriefcase,
-  HiOutlineCalendar,
 } from "react-icons/hi";
 import "./qualification.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+
 import "react-vertical-timeline-component/style.min.css";
 
 import { experienceData } from "../../data/experienceData";
 import { educationData } from "../../data/educationData";
 import { SectionWrapper } from "../../hoc";
-import { textVariant } from "../../utils/motion";
+
 import LineHead from "../../components/reusable/LineHead";
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "#233554",
+        color: "#EEEEEE",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "12px solid  #233554" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -39,9 +38,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-primary-green text-[24px] font-bold">{experience.title}</h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-ternary-light text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -65,10 +64,10 @@ const EducationCard = ({ education }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#233554",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "12px solid  #233554" }}
       date={education.date}
       iconStyle={{ background: education.iconBg }}
       icon={
@@ -82,26 +81,15 @@ const EducationCard = ({ education }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{education.title}</h3>
+        <h3 className="EEEEEE text-[24px] font-bold">{education.title}</h3>
         <h5>{education.subtitle}</h5>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-ternary-light text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {education.school}
         </p>
       </div>
-
-      {/* <ul className="mt-5 list-disc ml-5 space-y-2">
-        {education.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
-          >
-            {point}
-          </li>
-        ))}
-      </ul> */}
     </VerticalTimelineElement>
   );
 };
@@ -115,7 +103,7 @@ const Qualification = () => {
   return (
     <>
       <LineHead title="__.Qualification" />
-      <div className="flex justify-center items-center gap-20 my-8">
+      <div className="flex justify-center items-center gap-20 my-8 text-primary-dark dark:text-primary-light">
         <div
           className={`text-xl cursor-pointer flex flex-col items-center ${
             toggleState === 1 ? "qualification__active" : ""
@@ -167,7 +155,6 @@ const Qualification = () => {
 
 export default SectionWrapper(Qualification, "work");
 
-// import "./qualification.css";
 // import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar } from "react-icons/hi";
 // import {educationData} from "../../data/educationData";
 // import {experienceData} from "../../data/experienceData";

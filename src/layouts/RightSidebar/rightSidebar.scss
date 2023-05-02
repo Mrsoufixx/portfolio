@@ -3,8 +3,8 @@
 
 .right {
     position: fixed;
-    bottom: 0;
-    right: 4rem;
+    top: -60px;
+    right: 3rem;
     left: auto;
     animation: fadeIn 1s forwards;
 
@@ -26,7 +26,7 @@
         &:link,
         &:visited {
             text-decoration: none;
-            color: var(--light-slate);
+            color: #0a192f;
             letter-spacing: 0.15em;
             -webkit-writing-mode: vertical-rl;
             writing-mode: vertical-rl;
@@ -37,21 +37,18 @@
         }
 
         &:hover {
-            color: var(--primary);
+            color: #172e50;
             transform: translateY(-5px);
-
         }
-
     }
 
     &__line {
         content: "";
         display: block;
-        width: 1px;
+        width: 2px;
         height: 9rem;
         margin: 0px auto;
-        background-color: var(--light-slate);
+        background-color: #0a192f;
         margin-top: 1.3rem;
     }
-
 }

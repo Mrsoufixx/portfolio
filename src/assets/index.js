@@ -16,16 +16,16 @@ import tailwind from "./tech/tailwind.png";
 import laravel from "./tech/laravel.png";
 
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import lettref from "./company/f.jpg";
+import freelancer from "./company/freelancer.svg";
+import ibntofail from "./company/ibntofail.png";
+import orange from "./company/orange.jpg";
+import kwk from "./company/kwk.png";
 
 export {
  
   
   github,
- 
   css,
   docker,
   figma,
@@ -38,9 +38,10 @@ export {
   redux,
   tailwind,
   laravel,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  lettref,
+  ibntofail,
+  kwk,
+  orange,
+  freelancer,
  
 };

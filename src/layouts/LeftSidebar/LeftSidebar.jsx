@@ -1,38 +1,30 @@
 import React from 'react';
-import { FaYoutube, FaCodepen, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from "react-router-dom"
 import './leftSidebar.scss';
 
 const LeftSideBar = () => (
   <div className='left'>
     <main className='left__main'>
       <ul className='left__social'>
+
         <li className='left__linkItems'>
-          <a href='https://www.youtube.com/channel/UCax8or2_bzQCHe0GdSLITOA' className='left__links' target='_blank' rel='noreferrer'>
-            <FaYoutube className='left__icon' />
-          </a>
+          <Link to='https://github.com/Mrsoufixx' className='left__links' target='_blank' rel='noreferrer'>
+            <FaGithub className='left__icon dark:fill-slate-100 dark:hover:fill-primary-green' />
+          </Link>
         </li>
         <li className='left__linkItems'>
-          <a href='https://codepen.io/yashfalke77' className='left__links' target='_blank' rel='noreferrer'>
-            <FaCodepen className='left__icon' />
-          </a>
+          <Link to='https://www.instagram.com/soufianekor/' className='left__links' target='_blank' rel='noreferrer'>
+            <FaInstagram className='left__icon dark:fill-slate-100 dark:hover:fill-primary-green' />
+          </Link>
         </li>
         <li className='left__linkItems'>
-          <a href='https://github.com/yashfalke77' className='left__links' target='_blank' rel='noreferrer'>
-            <FaGithub className='left__icon' />
-          </a>
-        </li>
-        <li className='left__linkItems'>
-          <a href='https://www.instagram.com/yashfalke77/' className='left__links' target='_blank' rel='noreferrer'>
-            <FaInstagram className='left__icon' />
-          </a>
-        </li>
-        <li className='left__linkItems'>
-          <a href='https://www.linkedin.com/in/yashfalke77/' target='_blank' rel='noreferrer' className='left__links'>
-            <FaLinkedin className='left__icon' />
-          </a>
+          <Link to='https://www.linkedin.com/in/soufiane-korchi/' target='_blank' rel='noreferrer' className='left__links'>
+            <FaLinkedin className='left__icon dark:fill-slate-100 dark:hover:fill-primary-green' />
+          </Link>
         </li>
       </ul>
-      <div className='left__line' />
+      <div className='left__line dark:bg-primary-light' />
     </main>
   </div>
 );

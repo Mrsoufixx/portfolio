@@ -3,7 +3,7 @@
 .left {
     position: fixed;
     bottom: 0;
-    left: 40px;
+    left: 30px;
     right: auto;
     animation: fadeIn 1s forwards;
 
@@ -24,7 +24,7 @@
         cursor: pointer;
 
         &:hover .left__icon {
-            fill: var(--primary);
+            fill: #0a192f;
             transform: translateY(-5px);
         }
     }
@@ -32,7 +32,7 @@
     &__icon {
         width: 2rem;
         height: 2rem;
-        fill: var(--light-slate);
+        fill: #0a192f;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         cursor: pointer;
     }
@@ -40,10 +40,10 @@
     &__line {
         content: "";
         display: block;
-        width: 1px;
+        width: 2px;
         height: 9rem;
         margin: 0px auto;
-        background-color: var(--light-slate);
+        background-color: #0a192f;
         margin-top: 1.3rem;
     }
 }

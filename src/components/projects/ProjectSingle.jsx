@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image,techno }) => {
+const ProjectSingle = ({ title, category, image }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -29,12 +29,12 @@ const ProjectSingle = ({ title, category, image,techno }) => {
 							{category}
 						</span>
 					</div>
-						<div className='border flex flex-wrap'>
+						{/* <div className='border flex flex-wrap'>
 							{techno.map((t)=>(
 
 								<div key={t} className='p-2 dark:text-primary-light'>{t}</div>
 								))}
-						</div>
+						</div> */}
 				</div>
 			</Link>
 		</motion.div>
