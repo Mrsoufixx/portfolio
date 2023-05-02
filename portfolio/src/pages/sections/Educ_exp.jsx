@@ -16,6 +16,7 @@ import { experienceData } from "../../data/experienceData";
 import { educationData } from "../../data/educationData";
 import { SectionWrapper } from "../../hoc";
 import { textVariant } from "../../utils/motion";
+import LineHead from "../../components/reusable/LineHead";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -90,7 +91,7 @@ const EducationCard = ({ education }) => {
           {education.school}
         </p>
       </div>
-      
+
       {/* <ul className="mt-5 list-disc ml-5 space-y-2">
         {education.points.map((point, index) => (
           <li
@@ -113,45 +114,33 @@ const Qualification = () => {
   };
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <div className="container inline-flex items-center justify-start w-full">
-          <hr className="w-1/2 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" />
-          <div className="absolute px-4 text-2xl -translate-x-1/2 bg-white  dark:bg-gray-900">
-            _Qualification
-          </div>
-        </div>
-      </motion.div>
-      <div className="qualification__tabs">
+      <LineHead title="__.Qualification" />
+      <div className="flex justify-center items-center gap-20 my-8">
         <div
-          className={
-            toggleState === 1
-              ? "qualification__button button--flex qualification__active"
-              : "qualification__button button--flex"
-          }
+          className={`text-xl cursor-pointer flex flex-col items-center ${
+            toggleState === 1 ? "qualification__active" : ""
+          }`}
           onClick={() => toggleTab(1)}
         >
-          <HiOutlineAcademicCap className="qualification__icon" />
+          <HiOutlineAcademicCap size={40} />
           Education
         </div>
         <div
-          className={
-            toggleState === 2
-              ? "qualification__button button--flex qualification__active"
-              : "qualification__button button--flex"
-          }
+          className={`text-xl cursor-pointer flex flex-col items-center ${
+            toggleState === 2 ? "qualification__active" : ""
+          }`}
           onClick={() => toggleTab(2)}
         >
-          <HiOutlineBriefcase className="qualification__icon" />
+          <HiOutlineBriefcase size={40} />
           Experience
         </div>
       </div>
       <div
-        className="mt-20 flex flex-col"
-        {...(toggleState === 2
-          ? {
-              className: "qualification__content qualification__content-active",
-            }
-          : { className: "qualification__content" })}
+       className={`mt-20 flex flex-col ${
+        toggleState === 2
+          ? "qualification__content qualification__content-active"
+          : "qualification__content"
+      }`}
       >
         <VerticalTimeline>
           {experienceData.map((experience, index) => (
@@ -160,12 +149,11 @@ const Qualification = () => {
         </VerticalTimeline>
       </div>
       <div
-        className="mt-20 flex flex-col"
-        {...(toggleState === 1
-          ? {
-              className: "qualification__content qualification__content-active",
-            }
-          : { className: "qualification__content" })}
+        className={`mt-20 flex flex-col ${
+          toggleState === 1
+            ? "qualification__content qualification__content-active"
+            : "qualification__content"
+        }`}
       >
         <VerticalTimeline>
           {educationData.map((education, index) => (
@@ -179,7 +167,6 @@ const Qualification = () => {
 
 export default SectionWrapper(Qualification, "work");
 
-// import React, { useState } from "react";
 // import "./qualification.css";
 // import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar } from "react-icons/hi";
 // import {educationData} from "../../data/educationData";

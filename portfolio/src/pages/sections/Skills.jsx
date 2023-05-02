@@ -1,3 +1,4 @@
+import LineHead from "../../components/reusable/LineHead";
 import { design, frontend, backend, outils } from "../../data/technologiesData";
 import { textVariant } from "../../utils/motion";
 import {motion} from "framer-motion"
@@ -6,14 +7,7 @@ import {motion} from "framer-motion"
 function Skills() {
   return (
     <section>
-      <motion.div variants={textVariant()}>
-        <div className="container inline-flex items-center justify-start w-full my-4">
-          <hr className="w-1/2 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" />
-          <div className="absolute px-4 text-2xl -translate-x-1/2 bg-white  dark:bg-gray-900">
-            _Skills
-          </div>
-        </div>
-      </motion.div>
+      <LineHead title="_Skills"/>
       <div className="flex flex-wrap justify-center gap-2 items-center">
         <div className="border rounded w-1/2 ">
           <h1 className="border-b p-2 dark:text-white">_Backend</h1>

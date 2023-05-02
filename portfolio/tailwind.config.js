@@ -6,13 +6,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-light": "#F7F8FC",
-        "secondary-light": "#FFFFFF",
-        "ternary-light": "#f6f7f8",
+        "primary-light": "#EEEEEE",
+        "secondary-light": "#e6f1ff",
+        "ternary-light": "#ccd6f6",
 
-        "primary-dark": "#0D2438",
-        "secondary-dark": "#102D44",
-        "ternary-dark": "#1E3851",
+        "primary-dark": "#0a192f",
+        "secondary-dark": "#112240",
+        "ternary-dark": "#233554",
+
+        "primary-green": "#64ffda",
       },
       container: {
         padding: {
