@@ -1,46 +1,46 @@
-// import {
-// 	FiGithub,
-// 	FiTwitter,
-// 	FiLinkedin,
-// 	FiGlobe,
-// 	FiYoutube,
-// } from 'react-icons/fi';
+import {
+	FiGithub,
+	FiTwitter,
+	FiLinkedin,
+	FiGlobe,
+	FiYoutube,
+} from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
-// const socialLinks = [
-// 	{
-// 		id: 1,
-// 		icon: FiGlobe,
-// 		url: 'https://www.stoman.me/',
-// 	},
-// 	{
-// 		id: 2,
-// 		icon: FiGithub,
-// 		url: 'https://github.com/realstoman',
-// 	},
-// 	{
-// 		id: 3,
-// 		icon: FiTwitter,
-// 		url: 'https://twitter.com/realstoman',
-// 	},
-// 	{
-// 		id: 4,
-// 		icon: FiLinkedin,
-// 		url: 'https://www.linkedin.com/in/realstoman',
-// 	},
-// 	{
-// 		id: 5,
-// 		icon: FiYoutube,
-// 		url: 'https://www.youtube.com/c/realstoman',
-// 	},
-// ];
+const socialLinks = [
+	{
+		id: 1,
+		icon: <FiGlobe />,
+		url: 'https://www.stoman.me/',
+	},
+	{
+		id: 2,
+		icon: <FiGithub />,
+		url: 'https://github.com/realstoman',
+	},
+	{
+		id: 3,
+		icon: <FiTwitter />,
+		url: 'https://twitter.com/realstoman',
+	},
+	{
+		id: 4,
+		icon: <FiLinkedin />,
+		url: 'https://www.linkedin.com/in/realstoman',
+	},
+	{
+		id: 5,
+		icon: <FiYoutube />,
+		url: 'https://www.youtube.com/c/realstoman',
+	},
+];
 
 const AppFooter = () => {
 	return (
 		<div className="container mx-auto">
 			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
 				{/* Footer social links */}
-				{/* <div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
+				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
 					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
 						Follow me
 					</p>
@@ -58,7 +58,7 @@ const AppFooter = () => {
 							</a>
 						))}
 					</ul>
-				</div> */}
+				</div>
 
 				<AppFooterCopyright />
 			</div>
