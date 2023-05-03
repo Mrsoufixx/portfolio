@@ -4,7 +4,7 @@ import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 import About from './sections/AboutMe';
-import Contact from './sections/Contact';
+import Contact from './Contact';
 import Skills from './sections/Skills';
 
 
