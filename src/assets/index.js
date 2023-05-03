@@ -30,7 +30,7 @@ import  jewelery from "./Project/jewelery.png"
 import  rentwheel from "./Project/rentwheel.png"
 import  todolist from "./Project/todolist.png"
 import  movie from "./Project/movie.png"
-import  kanapi from "./Project/kanap.png"
+// import  kanapi from "./Project/kanap.png"
 import  shoes from "./Project/shoes.png"
 import  clone from "./Project/clone.png"
 import  gpsapp from "./Project/gpsapp.png"
@@ -65,7 +65,7 @@ export {
   girlzimpact,
   rentwheel,
   todolist,
-  kanapi,
+  
   shoes,
   clone,
  gpsapp,

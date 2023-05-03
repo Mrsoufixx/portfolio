@@ -1,5 +1,5 @@
 // Import images
-import { girlzimpact,jewelery,rentwheel,movie,todolist,kanapi,shoes,clone,gpsapp } from "../assets";
+import { girlzimpact,jewelery,rentwheel,movie,todolist,shoes,clone,gpsapp } from "../assets";
 
 export const projectsData = [
   {
@@ -54,7 +54,7 @@ export const projectsData = [
     id: 7,
     title: "Ecommerce canapé",
     category: "Web Application",
-    img: kanapi,
+    img: "kanapi",
     technologies: ["Javascript", "Node Js"],
     publishDate: "Mar 8, 2023",
   },
