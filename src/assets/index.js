@@ -26,14 +26,14 @@ import kwk from "./company/kwk.png";
 
 //import from project
 import  girlzimpact from "./Project/girlzimpact.png"
-import  jewelery from "./Project/jewelery.PNG"
-import  rentwheel from "./Project/rentwheel.PNG"
-import  todolist from "./Project/todolist.PNG"
-import  movie from "./Project/movie.PNG"
-import  kanapi from "./Project/kanap.PNG"
-import  shoes from "./Project/shoes.PNG"
-import  clone from "./Project/clone.PNG"
-import  gpsapp from "./Project/gpsapp.PNG"
+import  jewelery from "./Project/jewelery.png"
+import  rentwheel from "./Project/rentwheel.png"
+import  todolist from "./Project/todolist.png"
+import  movie from "./Project/movie.png"
+import  kanapi from "./Project/kanap.png"
+import  shoes from "./Project/shoes.png"
+import  clone from "./Project/clone.png"
+import  gpsapp from "./Project/gpsapp.png"
 
 
 import user from "./user.svg"
