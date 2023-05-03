@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import ContactDetails from "../components/contact/ContactDetails";
-import ContactForm from "../components/contact/ContactForm";
-import LineHead from "../components/reusable/LineHead";
+import ContactDetails from "../../components/contact/ContactDetails";
+import ContactForm from "../../components/contact/ContactForm";
+import LineHead from "../../components/reusable/LineHead";
 
 const Contact = () => {
   return (
