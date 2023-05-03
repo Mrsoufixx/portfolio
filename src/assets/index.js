@@ -25,7 +25,7 @@ import orange from "./company/orange.jpg";
 import kwk from "./company/kwk.png";
 
 //import from project
-import  girlzimpact from "./Project/girlzimpact.PNG"
+import  girlzimpact from "./Project/girlzimpact.png"
 import  jewelery from "./Project/jewelery.PNG"
 import  rentwheel from "./Project/rentwheel.PNG"
 import  todolist from "./Project/todolist.PNG"
