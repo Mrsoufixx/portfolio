@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 
 
 
+
 const Home = () => {
 	useEffect(() => {
 		document.title = "_Home";
@@ -27,6 +28,7 @@ const Home = () => {
 					aria-label="More Projects"
 				>
 					<Button title="More Projects" />
+					
 				</Link>
 			</div>
 			<Contact/>

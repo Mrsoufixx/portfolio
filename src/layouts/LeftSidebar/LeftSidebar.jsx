@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin,FaWhatsapp } from 'react-icons/fa';
 import { Link } from "react-router-dom"
 import './leftSidebar.scss';
 
@@ -21,6 +21,11 @@ const LeftSideBar = () => (
         <li className='left__linkItems'>
           <Link to='https://www.linkedin.com/in/soufiane-korchi/' target='_blank' rel='noreferrer' className='left__links'>
             <FaLinkedin className='left__icon dark:fill-slate-100 dark:hover:fill-primary-green' />
+          </Link>
+        </li>
+        <li className='left__linkItems'>
+          <Link to='https://api.whatsapp.com/send?phone=212602880383' target='_blank' rel='noreferrer' className='left__links'>
+            <FaWhatsapp className='left__icon dark:fill-slate-100 dark:hover:fill-primary-green' />
           </Link>
         </li>
       </ul>

@@ -6,6 +6,7 @@
     left: 30px;
     right: auto;
     animation: fadeIn 1s forwards;
+    transition: all 1s;
 
     @include respond(phone) {
         display: none;;
@@ -13,6 +14,12 @@
 
     @include respond(tab-port) {
         display: none;
+            left:20px;
+    }
+    @include respond(tab-land) {
+        
+            left:20px;
+            transition: all 1s;
     }
 
     &__social {
@@ -24,7 +31,7 @@
         cursor: pointer;
 
         &:hover .left__icon {
-            fill: #0a192f;
+            // fill: #0a192f;
             transform: translateY(-5px);
         }
     }

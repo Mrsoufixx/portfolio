@@ -7,6 +7,7 @@
     right: 3rem;
     left: auto;
     animation: fadeIn 1s forwards;
+    transition: all 1s;
 
     @include respond(phone) {
         display: none;
@@ -14,7 +15,12 @@
 
     @include respond(tab-port) {
         display: none;
+        
     }
+    @include respond(tab-land) {
+        right:20px;
+        transition: all 1s;
+}
 
     &__social {
         list-style: none;

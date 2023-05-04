@@ -16,6 +16,8 @@ const ProjectsGrid = () => {
                 image={project.img}
                 techno={project.technologies}
                 key={project.id}
+                redirect={project.redirect}
+                githubLink={project.githubLink}
               />
             ))}
       </div>

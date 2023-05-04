@@ -31,7 +31,7 @@ const RightSideBar = () => {
       <main className='right__main'>
         <div className='right__line dark:bg-primary-light ' />
         <div>
-          <Link to='/contact' className='right__email dark:text-primary-light dark:hover:text-primary-green'>
+          <Link to="mailto:korchi.soufiane@gmail.com?subject=New%20Opportunity&body=Hello%20Soufiane,%0D%0A%0D%0AI%20am%20writing%20to%20express%20my%20interest%20in%20working%20with%20you.%0D%0A%0D%0AThank%20you.%0D%0A%0D%0ARegards,%0D%0AYour%20Name/Society" className='right__email dark:text-primary-light dark:hover:text-primary-green'>
             korchi.soufiane@gmail.com
           </Link>
         </div>
