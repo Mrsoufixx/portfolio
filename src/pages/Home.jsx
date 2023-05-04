@@ -1,23 +1,24 @@
 import { Link } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
-import ProjectsGrid from '../components/projects/ProjectsGrid';
-import { ProjectsProvider } from '../context/ProjectsContext';
+import Project from '../pages/sections/ProjectsSections';
 import Button from '../components/reusable/Button';
-import About from './sections/AboutMe';
-import Contact from './Contact';
+import About from './sections/AboutMeSection';
+import Contact from './sections/ContactSection';
 import Skills from './sections/Skills';
+import { useEffect } from 'react';
+
 
 
 const Home = () => {
-	document.title = "Souf Porto"
+	useEffect(() => {
+		document.title = "_Home";
+	    }, []);
 	return (
 		<div className="container mx-auto">
 			<AppBanner/>
 			<About/>
 			<Skills/>
-			<ProjectsProvider>
-				<ProjectsGrid></ProjectsGrid>
-			</ProjectsProvider>
+			<Project/>
 
 			<div className="mt-8 sm:mt-10 flex justify-center mb-8">
 				<Link

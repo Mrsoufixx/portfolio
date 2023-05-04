@@ -5,7 +5,7 @@ const useThemeSwitcher = () => {
 	const activeTheme = theme === 'dark' ? 'light' : 'dark';
 	useEffect(() => {
 		const root = window.document.documentElement;
-		console.log(root)
+		
 		root.classList.add(theme);
 		root.classList.remove(activeTheme);
 		localStorage.setItem('theme', theme);

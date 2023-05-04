@@ -4,9 +4,11 @@ import ContactForm from "../components/contact/ContactForm";
 import LineHead from "../components/reusable/LineHead";
 
 const Contact = () => {
+  useEffect(() => {
+		document.title = "_Contact_me";
+	    }, []);
   return (
     <>
-      <LineHead title="_Contact_me" />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

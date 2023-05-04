@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
+import {logo} from "../../assets"
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -29,8 +30,13 @@ const AppHeader = () => {
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
-					<div>
-						<Link to="/">
+					<div >
+						<Link to="/" className='flex gap-3 items-center'>
+						<img
+									src={logo}
+									className="w-8 p-2 bg-slate-200 rounded"
+									alt="Logo"
+								/>
 							{/* {activeTheme === 'dark' ? (
 								<img
 									src={logoDark}

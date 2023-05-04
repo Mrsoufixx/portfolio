@@ -9,10 +9,10 @@ import RightSideBar from './layouts/RightSidebar/RightSidebar';
 import LeftSideBar from './layouts/LeftSidebar/LeftSidebar';
 import Spinner from './components/reusable/Spinner';
 
-const About = lazy(() => import('./pages/sections/AboutMe'));
-const Contact = lazy(() => import('./pages/sections/Contact.jsx'));
+const About = lazy(() => import('./pages/AboutMe'));
+const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
-const Projects = lazy(() => import('./pages/sections/Projects'));
+const Projects = lazy(() => import('./pages/Projects'));
 // const ProjectSingle = lazy(() => import('./pages/sections/ProjectSingle.jsx'));
 
 function App() {

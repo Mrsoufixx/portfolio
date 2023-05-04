@@ -37,10 +37,11 @@ import  gpsapp from "./Project/gpsapp.png"
 
 
 import user from "./user.svg"
+import logo from "./logo-port.svg"
 
 
 export {
- 
+ logo,
   user,
   github,
   css,

@@ -1,20 +1,23 @@
-import AboutMeBio from "../../components/about/AboutMeBio";
+import AboutMeBio from "../components/about/AboutMeBio";
 // import AboutCounter from "../../components/about/AboutCounter";
 // import AboutClients from "../../components/about/AboutClients";
-import { AboutMeProvider } from "../../context/AboutMeContext";
+import { AboutMeProvider } from "../context/AboutMeContext";
 import { motion } from "framer-motion";
-import Qualification from "./Educ_exp";
-import LineHead from "../../components/reusable/LineHead";
+import Qualification from "../pages/sections/Educ_exp";
+import { useEffect } from "react";
+
 
 const About = () => {
+  useEffect(() => {
+		document.title = "_About_me";
+	    }, []);
   return (
     <AboutMeProvider>
-      <LineHead title="_About_me"/>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, delay: 2 }}
         exit={{ opacity: 0 }}
-        className=""
+        className="container mx-auto"
       >
         <AboutMeBio />
       </motion.div>
