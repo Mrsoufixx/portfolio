@@ -1,6 +1,6 @@
 import { useState, createContext } from 'react';
 import { aboutMeData } from '../data/aboutMeData';
-import { clientsHeading as clientsPageHeading } from '../data/clientsData';
+// import { clientsHeading as clientsPageHeading } from '../data/clientsData';
 // import { clientsData as clientsDataJson } from '../data/clientsData';
 
 const AboutMeContext = createContext();
@@ -8,7 +8,7 @@ const AboutMeContext = createContext();
 export const AboutMeProvider = ({ children }) => {
 	const [aboutMe, setAboutMe] = useState(aboutMeData);
 
-	const clientsHeading = clientsPageHeading;
+	// const clientsHeading = clientsPageHeading;
 
 	// const [clientsData, setClientsData] = useState(clientsDataJson);
 
@@ -17,9 +17,8 @@ export const AboutMeProvider = ({ children }) => {
 			value={{
 				aboutMe,
 				setAboutMe,
-				clientsHeading,
 				
-				setClientsData,
+				
 			}}
 		>
 			{children}
