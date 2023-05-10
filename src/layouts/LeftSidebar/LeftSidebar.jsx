@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import "./leftSidebar.scss";
 import Social from "../../components/reusable/Social";
 

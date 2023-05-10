@@ -12,11 +12,12 @@ function CardSkill({ title, items, keyprop }) {
       <div className="p-2 grid grid-cols-3 w-full gap-2">
         {items.map((item) => (
           <div
-            className="relative border flex flex-col items-center justify-center w-full h-24 hover:bg-ternary-light hover:shadow-md"
+          
+            className="relative border flex flex-col gap-1 shadow-sm shadow-slate-300 dark:shadow-slate-700  items-center justify-center w-full h-24 hover:bg-ternary-dark hover:shadow-md"
             key={item.name}
           >
-            <img className="w-12" src={item.icon} alt={item.name} />
-            <div className="text-center text-xs dark:text-white dark:hover:text-primary-dark">
+            <img className="w-10 " src={item.icon} alt={item.name} />
+            <div className="text-center text-[11px] dark:text-white">
               {item.name}
             </div>
           </div>

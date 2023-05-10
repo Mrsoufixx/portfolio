@@ -51,14 +51,14 @@ const ProjectSingle = ({ title, category, image, techno, redirect, githubLink,is
         delay: 0.15,
       }}
     >
-      <Link to="/" aria-label={"Project" + { title }} >
+      <div className='mt-8'>
         <div
-          className="rounded shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark relative border-2 border-primary-darkborder-2 border-primary-dark dark:border-ternary-light"
+          className="rounded shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark relative border-2 border-primary-darkborder-2 border-primary-dark dark:border-ternary-light mt-2"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="">
-            <img src={image} className="rounded-t  w-full h-full" alt={title} />
+          <div className="h-80 overflow-hidden">
+            <img src={image} className=" w-full h-full" alt={title} />
           </div>
           <div className="text-center px-4 py-4 border-y-2 border-primary-dark dark:border-ternary-light ">
             <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
@@ -90,7 +90,7 @@ const ProjectSingle = ({ title, category, image, techno, redirect, githubLink,is
             </a>
 		  </motion.div>
           </div>
-      </Link>
+      </div>
     </motion.div>
   );
 };
