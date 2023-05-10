@@ -10,32 +10,44 @@ import {
       git,
       figma,
       docker,
+      illustrator,
+      photoshop,
+      sass,
+      office,
+      php,
+      mysql,
+      java,
+      bootstrap,
+      vue,
+      express,
+      laravel,
+      trello
     } from "../assets";
 
 export const backend = [
       {
         name: "Java",
-        icon: nodejs,
+        icon: java,
       },
       {
         name: "PHP",
-        icon: nodejs,
+        icon: php,
       },
       {
         name: "Laravel",
-        icon: nodejs,
+        icon: laravel,
       },
       {
         name: "Node JS",
         icon: nodejs,
       },
       {
-        name: "Express JS",
-        icon: nodejs,
+        name: "Express_JS",
+        icon: express,
       },
       {
         name: "Mysql",
-        icon: mongodb,
+        icon: mysql,
       },
       {
         name: "MongoDB",
@@ -45,11 +57,11 @@ export const backend = [
     ];
 export const frontend = [
       {
-        name: "HTML 5",
+        name: "HTML_5",
         icon: html,
       },
       {
-        name: "CSS 3",
+        name: "CSS_3",
         icon: css,
       },
       {
@@ -57,24 +69,24 @@ export const frontend = [
         icon: javascript,
       },
       {
-        name: "React JS",
+        name: "React_JS",
         icon: reactjs,
       },
       {
-        name: "Vue JS",
-        icon: reactjs,
+        name: "Vue_JS",
+        icon: vue,
       },
       {
-        name: "Tailwind CSS",
+        name: "Tailwind",
         icon: tailwind,
       },
       {
         name: "Sass",
-        icon: tailwind,
+        icon: sass,
       },
       {
         name: "Bootstrap",
-        icon: tailwind,
+        icon: bootstrap,
       },
       
     ];
@@ -85,19 +97,19 @@ export const design = [
         icon: figma,
       },
       {
-        name: "Adobe illustrator",
-        icon: figma,
+        name: "Illustrator",
+        icon: illustrator,
       },
       {
-        name: "Adobe photoshop",
-        icon: figma,
+        name: "Photoshop",
+        icon: photoshop,
       },
       
     ];
 export const outils = [
       {
         name: "Trello",
-        icon: html,
+        icon: trello,
       },
       {
         name: "Docker",
@@ -108,8 +120,12 @@ export const outils = [
         icon: git,
       },
       {
-        name: "Redux Toolkit",
+        name: "Redux",
         icon: redux,
+      },
+      {
+        name: "Office",
+        icon: office,
       },
     ];
 

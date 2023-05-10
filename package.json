@@ -17,9 +17,10 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.0",
     "react-slick": "^0.29.0",
+    "react-type-animation": "^3.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.62.1",
-    "sweetalert2": "^11.7.3"
+    "sweetalert2": "^11.4.8"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",

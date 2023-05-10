@@ -4,6 +4,7 @@ import github from "./github.png";
 
 
 //import from tech
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -15,7 +16,19 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import laravel from "./tech/laravel.png";
+import illustrator from "./tech/illustrator.svg"
+import sass from "./tech/sass.png"
+import photoshop from "./tech/photoshop.svg"
+import express from "./tech/express.png"
+import vue from "./tech/vue.png"
+import laravel from "./tech/laravel.png"
+import bootstrap from "./tech/bootstrap.png"
+import java from "./tech/java.png"
+import mysql from "./tech/mysql.png"
+import php from "./tech/php.png"
+import office from "./tech/office.png"
+import trello from "./tech/trello.png"
+
 
 //company and school
 import lettref from "./company/f.jpg";
@@ -41,6 +54,17 @@ import logo from "./logo-port.svg"
 
 
 export {
+      illustrator,
+      photoshop,
+      sass,
+      office,
+      php,
+      mysql,
+      java,
+      bootstrap,
+      vue,
+      express,
+      trello,
  logo,
   user,
   github,

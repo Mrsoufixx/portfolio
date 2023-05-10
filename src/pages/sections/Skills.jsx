@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import CardSkill from "../../components/reusable/CardSkill";
 import LineHead from "../../components/reusable/LineHead";
-import Slider from "react-slick"
+import Slider from "react-slick";
 import { design, frontend, backend, outils } from "../../data/technologiesData";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Skills() {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,8 +30,11 @@ export default function Skills() {
         </div>
       );
     } else {
+      
       const sliderSettings = {
         className: "center",
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: true,
         centerMode: true,
         infinite: true,
@@ -45,16 +49,25 @@ export default function Skills() {
             },
           },
         ],
+        
       };
 
       return (
         <div className="skills-slider mt-20">
           <Slider {...sliderSettings}>
             <div key="backend-slide">
-              <CardSkill title="Backend" items={backend} keyprop="backend-slide" />
+              <CardSkill
+                title="Backend"
+                items={backend}
+                keyprop="backend-slide"
+              />
             </div>
             <div key="frontend-slide">
-              <CardSkill title="Frontend" items={frontend} keyprop="frontend-slide" />
+              <CardSkill
+                title="Frontend"
+                items={frontend}
+                keyprop="frontend-slide"
+              />
             </div>
             <div key="design-slide ">
               <CardSkill title="Design" items={design} keyprop="design-slide" />

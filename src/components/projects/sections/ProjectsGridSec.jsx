@@ -18,6 +18,7 @@ const ProjectsGrid = () => {
                 key={project.id}
                 redirect={project.redirect}
                 githubLink={project.githubLink}
+                isGit={project.isGit}
               />
             ))}
       </div>

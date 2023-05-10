@@ -1,6 +1,6 @@
 // Import images
-import { girlzimpact,jewelery,rentwheel,movie,todolist,shoes,clone,gpsapp } from "../assets";
-
+import { girlzimpact,jewelery,rentwheel,movie,todolist,shoes,clone,gpsapp, github } from "../assets";
+import Construction from "../pages/Construction";
 export const projectsData = [
   {
     id: 1,
@@ -10,7 +10,9 @@ export const projectsData = [
     technologies:["Figma","Express Js","Tailwind","React Js", "Redux","MongoDb"],
     publishDate: "Jul 26, 2023",
     isShow: true,
-    redirect: "/inprogress"
+    redirect: "/inProgress",
+    githubLink: "",
+    isGit:false
   },
   {
     id: 2,
@@ -20,7 +22,9 @@ export const projectsData = [
     technologies:["Figma"],
     publishDate: "avr 12, 2023",
     isShow: true,
-    redirect: "/inprogress"
+    redirect: "https://www.figma.com/file/q0jW7QK3kqcizBeJzwI75X/Shoes-Ecommerce?type=design&node-id=0%3A1&t=lPDMf59G7o2X2EpU-1",
+    githubLink: "",
+    isGit:false
   },
   {
     id: 3,
@@ -30,7 +34,9 @@ export const projectsData = [
     technologies:["Figma"],
     publishDate: "avr 12, 2023",
     isShow: false,
-    redirect: "/inprogress"
+    redirect: "https://www.figma.com/file/ly71hAykAmamUgEVEXcu6j/Practice_-Figma-Homepage-Design-ODC-(1)?type=design&node-id=0%3A1&t=lPDMf59G7o2X2EpU-1",
+    githubLink: "",
+    isGit:false
   },
   {
     id: 4,
@@ -40,7 +46,9 @@ export const projectsData = [
     technologies: ["Wordpress", "Bootstrap", "Wpbackery"],
     publishDate: "Mar 1, 2023",
     isShow: true,
-    redirect: "https://girlzforimpact.com/"
+    redirect: "https://girlzforimpact.com/",
+    githubLink: "",
+    isGit:false
   },
   {
     id: 5,
@@ -50,7 +58,9 @@ export const projectsData = [
     technologies: ["PrestaShop", "Bootstrap"],
     publishDate: "Avr 20, 2023",
     isShow: false,
-    redirect: "https://girlzforimpact.com/"
+    redirect: "http://51.75.27.51/~bijouzc/",
+    githubLink: "",
+    isGit:false
   },
   {
     id: 6,
@@ -60,17 +70,23 @@ export const projectsData = [
     technologies: ["React Js", "Redux","Tailwind"],
     publishDate: "Avr 1, 2023",
     isShow: false,
-    redirect: "https://girlzforimpact.com/"
+    redirect: "https://todolist-korchi.netlify.app",
+    githubLink:"",
+
+    isGit:true
+
   },
   {
     id: 7,
     title: "Ecommerce canapé",
     category: "Web Application",
-    img: "kanapi",
+    img: "kanap",
     technologies: ["Javascript", "Node Js"],
     publishDate: "Mar 8, 2023",
     isShow: false,
-    redirect: "https://girlzforimpact.com/"
+    redirect: "https://kanap.gtnsimon.dev/front/html/index.html",
+    githubLink: "https://kanap.gtnsimon.dev/front/html/index.html",
+    isGit:true
     
   },
   {
@@ -81,8 +97,9 @@ export const projectsData = [
     technologies: ["React Js"],
     publishDate: "Mar 28, 2023",
     isShow: false,
-    redirect: "https://girlzforimpact.com/"
-    
+    redirect: "https://movie-app-korchi.netlify.app",
+    githubLink:"https://github.com/Mrsoufixx/hookCheck.git",
+    isGit:true
   },
   {
     id: 9,
@@ -92,7 +109,9 @@ export const projectsData = [
     technologies:["Figma"],
     publishDate: "fev 20, 2023",
     isShow: false,
-    redirect: "https://girlzforimpact.com/"
+    redirect: "https://girlzforimpact.com/",
+    githubLink: "",
+    isGit:false
   },
   {
     id: 10,
@@ -102,7 +121,9 @@ export const projectsData = [
     technologies:["Laravel","Tailwind","Livewire","Chart Js", "MySql"],
     publishDate: "Oct 28, 2022",
     isShow: true,
-    redirect: "https://girlzforimpact.com/"
+    redirect: "/private",
+    githubLink: "",
+    isGit:true
   },
 ];
 

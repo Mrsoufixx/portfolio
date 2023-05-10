@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 
 
-const ProjectSingle = ({ title, category, image, techno, redirect, githubLink }) => {
+const ProjectSingle = ({ title, category, image, techno, redirect, githubLink,isGit }) => {
   const [showIcons, setShowIcons] = useState(false);
   let timeoutId = null;
 
@@ -80,14 +80,14 @@ const ProjectSingle = ({ title, category, image, techno, redirect, githubLink })
             animate={showIcons ? "visible" : "hidden"}
             variants={variants}
           >
+              {isGit && <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                <FaGithub className="text-3xl text-ternary-dark dark:text-ternary-light mx-2 hover:text-teal-950 hover:-translate-y-1 transition-all duration-300" />
+              </a>}
             <a href={redirect} target="_blank" rel="noopener noreferrer" aria-label="Visit website">
               <FaExternalLinkAlt
                 className="text-3xl text-ternary-dark dark:text-ternary-light mx-2 hover:text-teal-950 hover:-translate-y-1 transition-all duration-300"
               />
             </a>
-              <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="View source code">
-                <FaGithub className="text-3xl text-ternary-dark dark:text-ternary-light mx-2 hover:text-teal-950 hover:-translate-y-1 transition-all duration-300" />
-              </a>
 		  </motion.div>
           </div>
       </Link>
