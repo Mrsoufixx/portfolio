@@ -1,56 +1,25 @@
 import { motion } from "framer-motion";
+import { logoDark } from "../../assets";
 
 const Spinner = () => {
-  const containerVariants = {
-    start: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-    end: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const letterVariants = {
-    start: {
-      opacity: 0,
-      y: "50%",
-    },
-    end: {
-      opacity: 1,
-      y: "0%",
-    },
-  };
-
-  const name = "Soufiane";
-  const animationDuration = 2; // Durée de l'animation en secondes
-
   return (
     <div className="flex justify-center items-center h-screen dark:bg-primary-dark bg-primary-light">
       <motion.div
-        className="text-5xl text-primary-dark dark:text-primary-green font-bold"
-        variants={containerVariants}
-        initial="start"
-        animate="end"
-        transition={{ duration: animationDuration }}
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ rotate: 180, scale: 1, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 60,
+          damping: 30,
+          duration: 1, // Adjust the duration to control the speed
+          repeat: 0, // Set repeat to 0 to disable animation repetition
+        }}
       >
-        {name.split("").map((letter, index) => (
-          <motion.span
-            key={index}
-            className="inline-block"
-            variants={letterVariants}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 10,
-            }}
-          >
-            {letter}
-          </motion.span>
-        ))}
+        <img
+          src={logoDark}
+          alt="Logo"
+          className="w-24"
+        />
       </motion.div>
     </div>
   );

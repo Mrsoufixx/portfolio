@@ -17,7 +17,7 @@ const Projects = lazy(() => import('./pages/Projects'));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const spinnerDuration = 2000; // Duration of the spinner animation in milliseconds
+  const spinnerDuration = 4000; // Duration of the spinner animation in milliseconds
 
   useEffect(() => {
     const timer = setTimeout(() => {

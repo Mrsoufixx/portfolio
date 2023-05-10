@@ -50,11 +50,14 @@ import  gpsapp from "./Project/gpsapp.png"
 
 
 import user from "./user.svg"
-import logo from "./logo-port.svg"
+import logoDark from "./logoDark.svg"
+import logoLight from "./logoLight.svg"
 
 
 export {
       illustrator,
+      logoLight,
+      logoDark,
       photoshop,
       sass,
       office,
@@ -65,7 +68,6 @@ export {
       vue,
       express,
       trello,
- logo,
   user,
   github,
   css,
