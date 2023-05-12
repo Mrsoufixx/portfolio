@@ -53,7 +53,7 @@ const SocialMobile = () => {
                   href={link.url}
                   target="__blank"
                   key={link.id}
-                  className="text-ternary-dark hover:text-primary-dark dark:hover:text-primary-green dark:text-primary-light cursor-pointer  p-1 duration-300"
+                  className="text-ternary-dark hover:text-primary-dark dark:hover:text-primary-green dark:text-primary-light cursor-pointer p-1 duration-300"
                 >
                   <i className="text-3xl sm:text-2xl md:text-3xl">
                     {link.icon}
