@@ -14,9 +14,9 @@ const AppBanner = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
+      className="flex flex-col sm:justify-between items-center sm:flex-col md:flex-row mt-12 md:mt-2"
     >
-      <div className="w-full md:w-2/4 text-left">
+      <div className="w-full md:w-2/4 text-left flex flex-col justify-center items-center lg:block">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -52,9 +52,13 @@ import  gpsapp from "./Project/gpsapp.png"
 import user from "./user.svg"
 import logoDark from "./logoDark.svg"
 import logoLight from "./logoLight.svg"
-
+ //mes photo
+ import me1 from "./me/me1.png"
+ import me2 from "./me/me2.png"
 
 export {
+    me1,
+    me2,
       illustrator,
       logoLight,
       logoDark,

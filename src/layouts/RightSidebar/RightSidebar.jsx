@@ -23,7 +23,7 @@ const RightSideBar = () => {
 
   return (
     <motion.div
-      className='right'
+      className='right z-20'
       variants={sidebarVariants}
       initial='hidden'
       animate='visible'
