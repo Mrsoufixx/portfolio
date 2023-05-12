@@ -6,9 +6,9 @@ const Spinner = () => {
     <div className="flex justify-center items-center h-screen dark:bg-primary-dark bg-primary-light">
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
-        animate={{ rotate: 180, scale: 1, opacity: 1 }}
+        animate={{ rotate: 360, scale: 1, opacity: 1 }}
         transition={{
-          type: "spring",
+          type: "ease-in-out",
           stiffness: 60,
           damping: 30,
           duration: 1, // Adjust the duration to control the speed

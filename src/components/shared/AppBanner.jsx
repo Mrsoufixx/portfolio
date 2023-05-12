@@ -72,7 +72,7 @@ const AppBanner = () => {
             ">_ Formateur ",
             1000,
           ]}
-          className="font-general-medium text-md md:text-lg lg:text-lg xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+          className="font-general-medium text-md md:text-lg lg:text-lg xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200  ml-6 sm:ml-0 lg:ml-0 xl:ml-0"
           speed={35}
           // style={{ fontSize: '2em' }}
           repeat={Infinity}
