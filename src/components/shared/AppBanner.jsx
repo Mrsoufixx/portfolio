@@ -4,6 +4,7 @@ import { FiArrowDownCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
 import CercleBanner from "../reusable/CercleBanner";
 import { TypeAnimation } from "react-type-animation";
+import SocialMobile from "../reusable/SocialMobile";
 
 const AppBanner = () => {
   const [activeTheme] = useThemeSwitcher();
@@ -61,6 +62,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
+          className="font-general-medium text-md md:text-lg lg:text-lg xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
         >
 
         <TypeAnimation
@@ -72,14 +74,15 @@ const AppBanner = () => {
             ">_ Formateur ",
             1000,
           ]}
-          className="font-general-medium text-md md:text-lg lg:text-lg xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200  ml-6 sm:ml-0 lg:ml-0 xl:ml-0"
+          className="font-general-medium text-md md:text-lg lg:text-lg xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200 "
           speed={35}
           // style={{ fontSize: '2em' }}
           repeat={Infinity}
         />
+        
         </motion.p>
 
-
+        <SocialMobile/>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -101,6 +104,7 @@ const AppBanner = () => {
             </span>
           </a>
         </motion.div>
+        
       </div>
       <motion.div
         initial={{ opacity: 0, y: -180 }}
