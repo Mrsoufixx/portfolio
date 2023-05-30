@@ -7,7 +7,7 @@ export const projectsData = [
     title: "Louer des voitures/motos",
     category: "Web Application",
     img: rentwheel,
-    technologies:["Figma","Express_Js","Tailwind","React_Js", "Redux","MongoDb"],
+    technologies:["MERN","Tailwind CSS"],
     publishDate: "Jul 26, 2023",
     isShow: true,
     redirect: "/inProgress",

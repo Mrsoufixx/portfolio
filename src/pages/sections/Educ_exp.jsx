@@ -22,8 +22,9 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "#233554",
-        color: "#EEEEEE",
+        color: "#fff",
       }}
+      // className="dark:bg-[#233554] dark:text-[#eee]"
       contentArrowStyle={{ borderRight: "12px solid  #233554" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
@@ -81,7 +82,7 @@ const EducationCard = ({ education }) => {
       }
     >
       <div>
-        <h3 className="EEEEEE text-[24px] font-bold">{education.title}</h3>
+        <h3 className="text-primary-green text-[24px] font-bold">{education.title}</h3>
         <h5>{education.subtitle}</h5>
         <p
           className="text-ternary-light text-[16px] font-semibold"
@@ -105,7 +106,7 @@ const Qualification = () => {
       <LineHead title="__.Qualification" />
       <div className="flex justify-center items-center gap-20 my-8 text-primary-dark dark:text-primary-light">
         <div
-          className={`text-xl cursor-pointer flex flex-col items-center ${
+          className={`text-xl cursor-pointer flex flex-col items-center  ${
             toggleState === 1 ? "qualification__active" : ""
           }`}
           onClick={() => toggleTab(1)}

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { logoDark } from "../../assets";
+import { logoLight } from "../../assets";
 
 const Spinner = () => {
   return (
-    <div className="flex justify-center items-center h-screen dark:bg-primary-dark bg-primary-light">
+    <div className="flex justify-center items-center h-screen dark:bg-primary-dark bg-primary-dark">
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ rotate: 360, scale: 1, opacity: 1 }}
@@ -16,7 +16,7 @@ const Spinner = () => {
         }}
       >
         <img
-          src={logoDark}
+          src={logoLight}
           alt="Logo"
           className="w-24"
         />

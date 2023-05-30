@@ -3,7 +3,8 @@ import CardSkill from "../../components/reusable/CardSkill";
 import LineHead from "../../components/reusable/LineHead";
 import Slider from "react-slick";
 import { design, frontend, backend, outils } from "../../data/technologiesData";
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Skills() {
   const [isMobile, setIsMobile] = useState(false);

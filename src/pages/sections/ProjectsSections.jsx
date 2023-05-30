@@ -7,7 +7,7 @@ const Projects = () => {
 		
 			<div className="flex flex-col items-center justify-center mb-12">
 				<ProjectsGrid />
-				<ButtonLink title="_Plus" link="../Projects.jsx"/>
+				<ButtonLink title="_Plus" link="/Projects"/>
 				
 			</div>
 		

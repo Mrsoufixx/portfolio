@@ -36,7 +36,7 @@ const AppHeader = () => {
       animate={{ opacity: 1 }}
       id="nav"
       className={`sticky top-0 p-0 backdrop-blur-2xl z-10 ${
-        scrollShadow ? "shadow-md" : ""
+        scrollShadow ? "shadow-md bg-[#eeeeeea2] dark:bg-[#0a192fd0]" : ""
       }`}
     >
       <div className="max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between  sm:container sm:mx-auto sm:items-center py-3 ">

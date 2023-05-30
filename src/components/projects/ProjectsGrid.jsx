@@ -72,7 +72,7 @@ const ProjectsGrid = () => {
                                 rounded-lg
                                 text-sm
                                 sm:text-md
-                                bg-secondary-light
+                                bg-[#f5f2f2]
                                 dark:bg-ternary-dark
                                 text-primary-dark
                                 dark:text-ternary-light
@@ -94,28 +94,40 @@ const ProjectsGrid = () => {
         {selectProject
           ? selectProjectsByCategory.map((project) => (
               <ProjectSingle
-                title={project.title}
-                category={project.category}
-                image={project.img}
-                key={project.id}
-              />
-            ))
-          : searchProject
-          ? searchProjectsByTitle.map((project) => (
-              <ProjectSingle
-                title={project.title}
-                category={project.category}
-                image={project.img}
-                key={project.id}
-              />
-            ))
-          : projects.map((project) => (
-              <ProjectSingle
+
                 title={project.title}
                 category={project.category}
                 image={project.img}
                 techno={project.technologies}
                 key={project.id}
+                redirect={project.redirect}
+                githubLink={project.githubLink}
+                isGit={project.isGit}
+              />
+            ))
+          : searchProject
+          ? searchProjectsByTitle.map((project) => (
+              <ProjectSingle
+              title={project.title}
+              category={project.category}
+              image={project.img}
+              techno={project.technologies}
+              key={project.id}
+              redirect={project.redirect}
+              githubLink={project.githubLink}
+              isGit={project.isGit}
+              />
+            ))
+          : projects.map((project) => (
+              <ProjectSingle
+              title={project.title}
+              category={project.category}
+              image={project.img}
+              techno={project.technologies}
+              key={project.id}
+              redirect={project.redirect}
+              githubLink={project.githubLink}
+              isGit={project.isGit}
               />
             ))}
       </div>

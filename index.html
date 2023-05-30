@@ -11,5 +11,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const activeTheme = localStorage.theme || "dark";
+      const favicon = document.getElementById("favicon");
+
+      if (activeTheme === "dark") {
+        favicon.href = "./src/assets/logo-port-dark.svg";
+      } else {
+        favicon.href = "./src/assets/logo-port-light.svg";
+      }
+    </script>
   </body>
 </html>
